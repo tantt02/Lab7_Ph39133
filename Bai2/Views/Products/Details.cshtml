@@ -1,0 +1,52 @@
+﻿@model int
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="container">
+    <div class="row">
+        <div class="col d-flex  m-2 justify-content-center align-items-center w-100 overflow-hidden">
+            <img src="~/@StaticService.listProducts[Model].Img" class="w-100" />
+        </div>
+        <div class="col">
+            <h4><b>@StaticService.listProducts[Model].Name</b></h4>
+            <h5 class="mt-2"><b>$@StaticService.listProducts[Model].Price.ToString("N0")</b></h5>
+
+            <p class="btn btn-primary mt-3">ADD TO CART</p>
+            <br>
+            <p class="btn btn-success mt-1">BUY IT NOW</p>
+            <br>
+            <hr>
+            <p>This is a demonstration store. You can purchase products like this from Leica Store Miami.
+            <p>
+                • S-System Kit
+            <p>
+                • Details
+            </p>
+            <p>
+                • S Specs
+            </p>
+            <p>
+                • Lens Specs
+            </p>
+            The Leica S (Typ 006) + Leica Summarit-S 70mm f/2.5 ASPH kit combines Leica's top- of-the-line medium format digital camera body with one of the most versatile lenses in the Leica S-System. The Leica S (Typ 006) is a 37.5 megapixel medium format digital SLR that merges superb image quality with a fully weather and dust sealed body designed from scratch to be ergonomic and straightforward to use. This kit will allow you to immediately begin your photographic adventure; simply add a memory card and start shooting.</p>
+        </div>
+    </div>
+</body>
+
+</html>
